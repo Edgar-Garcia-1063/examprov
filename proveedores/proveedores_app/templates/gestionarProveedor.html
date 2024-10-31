@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestión Proveedores {% endblock %}
+
+{% block cuerpo %} 
+
+    <h1>Gestión Proveedores Edgar Garcia</h1>
+    {% for m in proveedores %}
+
+        <li> {{m.id_proveedor}}.-.-.-.{{m.nombre}}.-.-.-.{{m.contacto}}.-.-.-.{{m.telefono}}.-.-.-.{{m.email}} </li>
+
+    {% endfor %}
+{% endblock %}
